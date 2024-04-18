@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Ecosystem Conservation</title>
+    <link rel="stylesheet" href="hud.css">
+    <style>
+        /* Additional CSS for button and form */
+        .add-blog-form {
+            display: none;
+        }
+        .add-blog-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .add-blog-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .add-blog-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Blog - Ecosystem Conservation</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="red.html">Red List</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="ss.html">Success Stories</a></li>
+                <li><a href="get.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <a href="si.html" class="button">Sign In</a>
+            <a href="re.html" class="button">Register</a>
+        </div>
+    </nav>
+    <main>
+        <section id="blog" class="content">
+            <div class="container">
+                <h2>New Blog Post</h2>
+                <button onclick="toggleAddBlogForm()">Add Blog</button>
+                <form id="blogForm" class="add-blog-form">
+                    <textarea id="blogContent" rows="4" placeholder="Write your blog post here..."></textarea>
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+            <div class="container" id="blogPosts">
+                <!-- Sample blogs -->
+                <div class="blog-post">
+                    <p><strong>JohnDoe:</strong> Ecosystem conservation is vital for the survival of our planet. We must take action now to protect endangered species and preserve biodiversity.</p>
+                </div>
+                <div class="blog-post">
+                    <p><strong>EcoWarrior:</strong> Today, I attended a rally advocating for stronger ecosystem policies. It's inspiring to see so many people come together for a common cause.</p>
+                </div>
+                <div class="blog-post">
+                    <p><strong>NatureLover:</strong> The Red List of Threatened Species serves as a stark reminder of the urgent need for conservation efforts. We cannot afford to lose any more precious biodiversity.</p>
+                </div>
+                <!-- Additional sample blogs -->
+                <div class="blog-post">
+                    <p><strong>GreenActivist:</strong> One person's actions might seem insignificant, but collectively, we have the power to make a difference. Let's work together to protect our planet's ecosystems!</p>
+                </div>
+                <div class="blog-post">
+                    <p><strong>Conservationist123:</strong> As a conservation biologist, I've witnessed firsthand the devastating impact of habitat loss on wildlife populations. We need to prioritize habitat preservation to safeguard biodiversity.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ecosystem Conservation</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

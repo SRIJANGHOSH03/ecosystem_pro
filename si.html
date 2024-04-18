@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Ecosystem Conservation</title>
+    <link rel="stylesheet" href="hud.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Sign In</h1>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="container">
+                <form id="signInForm" onsubmit="redirectToHomePage(); return false;">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ecosystem Conservation</p>
+        </div>
+    </footer>
+
+    <script>
+        function redirectToHomePage() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>

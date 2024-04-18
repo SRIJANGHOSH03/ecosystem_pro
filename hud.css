@@ -1,0 +1,180 @@
+/* hud.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 1%;
+}
+
+/* Ensure the navigation links are displayed in a single line */
+nav ul {
+    display: flex;
+    text-align: center;
+    margin-top: 1%;
+}
+
+nav ul li {
+    margin-left: 5%;
+    text-align: center;
+}
+
+/* Center the text horizontally */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease; /* Add smooth transition for color change */
+    font-size: 18px; /* Increase the font size */
+    text-align: center; /* Center the text horizontally */
+}
+
+/* Add hover effects to the navigation links */
+nav ul li a:hover {
+    color: #007bff; /* Change the color on hover */
+}
+
+/* Add line effect below the text */
+nav ul li a::before,
+nav ul li a::after {
+    content: ''; /* Create an empty content */
+    position: absolute;
+    bottom: -3px; /* Adjust the position of the line */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Height of the line */
+    background-color: transparent; /* Set initial color of the line */
+    transform: scaleX(0); /* Initially scale the line to 0 width */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add smooth transition */
+}
+
+/* Add line effect on hover */
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    transform: scaleX(1); /* Scale the line to full width on hover */
+    background-color: #007bff; /* Change the color of the line on hover */
+}
+
+
+
+
+
+.buttons {
+    text-align: right; /* Align buttons to the right */
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffdb4d;
+}
+
+/* Position sign-in and register buttons at the top right corner */
+.buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"],
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+.button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
