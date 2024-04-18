@@ -178,3 +178,147 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+/* Position sign-in and register buttons at the top right corner */
+.buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Style the logo within the buttons */
+.logo {
+    width: 20px; /* Adjust the width of the logo */
+    margin-right: 5px; /* Add some spacing between the logo and text */
+}
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .buttons {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .button {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px 0;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"],
+    .button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 1140px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .buttons {
+        position: static;
+        top: 20px;
+        right: 20px;
+    }
+
+    .button {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+
+    main {
+        padding: 20px 0;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+    button[type="submit"],
+    .button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+
